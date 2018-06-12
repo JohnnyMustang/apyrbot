@@ -50,23 +50,23 @@ class NamerBot(discord.Client):
         self.ready = True
 
 @bot.command()
-	async def add(ctx, a: int, b: int):
+    async def add(ctx, a: int, b: int):
 	    await ctx.send(a+b)
 
 	@bot.command()
-	async def multiply(ctx, a: int, b: int):
+    async def multiply(ctx, a: int, b: int):
 	    await ctx.send(a*b)
 
 	@bot.command()
-	async def greet(ctx):
-	    await ctx.send(":smiley: :wave: Hello, there!")
+    async def greet(ctx):
+        await ctx.send(":smiley: :wave: Hello, there!")
 
 	@bot.command()
-	async def cat(ctx):
+    async def cat(ctx):
 	    await ctx.send("https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif")
 
 	@bot.command()
-	async def info(ctx):
+    async def info(ctx):
 	    embed = discord.Embed(title="nice bot", description="Nicest bot there is ever.", color=0xeee657)
 	    
 	    # give info about you here
