@@ -102,4 +102,4 @@ async def help(ctx):
 
     await ctx.send(embed=embed)
 
-bot.run('process.env.TOKEN')
+bot.run(process.env.TOKEN)
