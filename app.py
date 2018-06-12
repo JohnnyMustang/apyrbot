@@ -36,7 +36,7 @@ class NamerBot(discord.Client):
 		if message.author.id == 365975655608745985:
 			emb = message.embeds[0]
 			try:
-			embcheck = emb.title.startswith('A wild')
+				embcheck = emb.title.startswith('A wild')
 			except AttributeError:
 				return    
 			if embcheck:
