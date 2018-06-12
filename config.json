@@ -1,0 +1,22 @@
+{
+   "token": "",
+   "command_prefix": "|",
+   "priority": ["Groudon", "Haxorus", "Phione", "Eevee", "Glaceon", "Umbreon", "Sylveon", "Vaporeon", "Flareon", "Jolteon", "Espeon", "Leafeon", "Salamence", "Bagon", "Shelgon", "Salamence", "Lugia", "Ho-Oh",
+      "Latios", "Latias", "Raikou", "Entei", "Regirock", "Regice", "Regigigas", "Deoxys", "Mew", "Mewtwo", "Rayquaza", "Ditto", "Charmander", "Charmeleon", "Charizard", "Squirtle", "Wartortle", "Blastoise",
+      "Bulbasaur", "Ivysaur", "Venusaur", "Snorlax", "Sceptile", "Grovyle", "Altaria", "Metagross", "Metang", "Beldun", "Scyther", "Ninjask"
+    ],
+   "avoid": [],
+   "catch_rate": 100,
+   "delay": 1,
+   "delay_on_priority": false,
+   "restrict_duplicates": false,
+   "max_duplicates": 2,
+   "owner_id": 339255932242493451,
+   "blacklists": [],
+   "whitelists": [],
+   "blacklist_guilds": [382316968394620938],
+   "whitelist_guilds": [],
+   "allowed_users": [],
+   "alts": [],
+   "autolog": false
+}
