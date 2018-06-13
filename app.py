@@ -4,25 +4,6 @@ from discord.ext import commands
 import json
 import hashlib
 
-client = discord.Client()
-
-@client.event
-async def on_message(message):
-    # we do not want the bot to reply to itself
-    if message.author == client.user:
-        return
-
-    if message.content.startswith('!hello'):
-        msg = 'Hello {0.author.mention}'.format(message)
-        await client.send_message(message.channel, msg)
-
-@client.event
-async def on_ready():
-    print('Logged in as')
-    print(client.user.name)
-    print(client.user.id)
-    print('------')
-
 class NamerBot(discord.Client):
 	def __init__(self, config_path: str, pokenames_path: str, *args, **kwargs):
 		self.config_path = config_path
@@ -58,5 +39,24 @@ class NamerBot(discord.Client):
 
 	async def on_ready(self):
 		print("NamerBot is online!")
+
+client = discord.Client()
+
+@client.event
+async def on_message(message):
+    # we do not want the bot to reply to itself
+    if message.author == client.user:
+        return
+
+    if message.content.startswith('!hello'):
+        msg = 'Hello {0.author.mention}'.format(message)
+        await client.send_message(message.channel, msg)
+
+@client.event
+async def on_ready():
+    print('Logged in as')
+    print(client.user.name)
+    print(client.user.id)
+    print('------')
 
 client.run('MzM5MjU1OTMyMjQyNDkzNDUx.DgHK-w.WQeVBawwAF-ww4RvVSVM_b7TINQ')
