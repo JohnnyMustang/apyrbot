@@ -13,7 +13,7 @@ class NamerBot(discord.Client):
         with open(pokenames_path, 'r', encoding='utf-8') as f:
             self.pokenames = json.load(f)
         super().__init__()
-    @self.event
+        
     def run(self):
         super().run(self.configs['token'])    
 
