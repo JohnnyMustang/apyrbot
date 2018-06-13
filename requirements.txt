@@ -1,4 +1,4 @@
-https://github.com/Rapptz/discord.py/archive/rewrite.zip#egg=discord.py
+discord.py==1.0.0a1467+g6b75179
 aiohttp==2.2.5
 async-timeout==3.0.0
 beautifulsoup4==4.5.3
