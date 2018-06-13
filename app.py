@@ -47,16 +47,16 @@ class NamerBot(discord.Client):
 			emb = message.embeds[0]
 			try:
 				embcheck = emb.title.startswith('A wild')
+				print('A wild pokemon has appeared')
 			except AttributeError:
 				return    
 			if embcheck:
+				print('embcheck')
 				name = await self.match(emb.image.url.split('?')[0])
 				name = name.title()
 			await message.channel.send(name)
 
 	async def on_ready(self):
 		print("NamerBot is online!")
-
-		self.ready = True
 
 client.run('MzM5MjU1OTMyMjQyNDkzNDUx.DgHK-w.WQeVBawwAF-ww4RvVSVM_b7TINQ')
