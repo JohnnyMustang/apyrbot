@@ -3,6 +3,18 @@ import discord
 from discord.ext import commands
 import json
 import hashlib
+import discord
+
+client = discord.Client()
+
+
+@client.event
+async def on_ready():
+    print('Logged in as')
+    print(client.user.name)
+    print(client.user.id)
+    print('------')
+
 
 class NamerBot(discord.Client):
 	def __init__(self, config_path: str, pokenames_path: str, *args, **kwargs):
